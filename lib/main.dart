@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'halaman_home.dart';
+import 'Pages/halaman_profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(title: "Aplikasi Flutter Pertama", home: HomePage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Perpustakaan Kampus',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HalamanProfile(),
+    );
   }
 }
